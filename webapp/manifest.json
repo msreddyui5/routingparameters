@@ -1,0 +1,112 @@
+{
+	"_version": "1.7.0",
+	"sap.app": {
+		"id": "com.saproutingparameters",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+
+		]
+	},
+
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "com.saproutingparameters.view.View1",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {},
+				"sap.ushell": {},
+				"sap.collaboration": {},
+				"sap.ui.comp": {},
+				"sap.uxap": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.saproutingparameters.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "navigation.view",
+				"controlId": "app",
+				"controlAggregation": "pages"
+
+			},
+			"routes": [{
+					"pattern": "",
+					"name": "view11",
+					"view": "view11",
+					"controlAggregation": "pages"
+				},
+
+				{
+
+					"pattern": "page2/{invoicePath}/{invoicePath1}",
+					"name": "view22",
+					"target": "view22",
+					"controlAggregation": "pages"
+				}
+			],
+			"targets": {
+				"view111": {
+					"viewName": "View1"
+
+				},
+				"view22": {
+					"viewName": "view2"
+
+				}
+			}
+
+		}
+            
+	}
+}

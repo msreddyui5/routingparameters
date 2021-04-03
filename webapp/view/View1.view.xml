@@ -1,0 +1,37 @@
+<mvc:View controllerName="com.saproutingparameters.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="Tableview">
+				<content>
+					<Table id="abc" items="{path: '/Objects'}">
+						<columns>
+							<Column width="11rem">
+								<Label text="Name"/>
+							</Column>
+							<Column width="11rem">
+								<Label text="College"/>
+							</Column>
+							<Column width="6rem" hAlign="End">
+								<Label text="Branch"/>
+							</Column>
+							<Column width="15rem" hAlign="End">
+								<Label text="Percentage"/>
+							</Column>
+							<Column width="15rem" hAlign="End">
+						
+							</Column>
+						</columns>
+						<ColumnListItem press="onPress" type="Navigation">
+							<Text text="{Name}"></Text>
+							<Text text="{College}"></Text>
+							<Text text="{Branch}"></Text>
+							<Text text="{Percentage}"></Text>
+							<Button  type="Reject" icon="sap-icon://delete" press="ondeletepress" />
+						</ColumnListItem>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

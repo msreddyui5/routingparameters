@@ -1,0 +1,13 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.saproutingparameters.controller.view2"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	
+			<Page showNavButton="true" navButtonPress="onNavBack">
+				<content>
+					<VBox>
+						<Text id="myTestId" text="Name"></Text>
+						<Text id="TestId" text="Branch"></Text>
+					</VBox>
+				</content>
+			</Page>
+	
+</mvc:View>

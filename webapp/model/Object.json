@@ -1,0 +1,24 @@
+{
+     	"Objects":[
+	{
+		"Name" : "DIVYA",
+		"College" : "KITS",
+		"Branch" : "ECE",
+		"Percentage" : "70"
+	
+	},
+	{
+		"Name" : "SRAVANI",
+		"College" : "GLOBAL",
+		"Branch" : "EEE",
+		"Percentage" : "80 "
+	},
+{
+		"Name" : "MOUNICA",
+		"College" : "GATE",
+		"Branch" : "CSE",
+		"Percentage" : "60"
+}
+
+]
+}
